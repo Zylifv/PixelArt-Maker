@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+:root {
+  --off-white: #d6ccc1;
+  --pale-orange: #ebb071;
+  --border-sand: #e09e58;
+  --white: #fff;
+  --dark-grey: #3d3d3d;
+  --medium-grey: #696969;
+}
+
+body {
+  background-color: var(--off-white);
+  margin: 0;
+  auto: 0;
+  width: 99vw;
+  position: relative;
+  font-family: 'Ubuntu';
+}
+
+main {
+  margin: auto;
+  width: 767px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 2.5em;
+}
+
+#board-size-choice {
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+#size-amount {
+  height: 28px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+#size-amount:focus {
+  outline: none;
+}
+
+#select, #new-board {
+  margin: 10px;
+  border: 2px solid var(--border-sand);
+  background-color: var(--pale-orange);
+  color: var(--white);
+  height: 30px;
+}
+
+#colour-wheel {
+  margin: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 267px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#current_color {
+  width: 120px;
+  margin-left: 20px;
+  border: none;
+}
+
+#pixel-board {
+  --size: 4;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(var(--size), 1fr);
+  grid-template-rows: repeat(var(--size), 1fr);
+  border: 5px solid var(--white);
+  gap: 3px;
+  padding: 3px;
+}
+
+.box {
+  background-color: var(--dark-grey);
+  border-radius: 2px;
+}
+
+.box:hover {
+  background-color: var(--medium-grey);
+}
+
+#sig {
+  color: var(--white);
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  justify-content: center;
+  font-size: 0.6em;
+  letter-spacing: 0.25em;
+  margin-top: 0%;
+  width: 400px;
+  height: 40px;
+}
