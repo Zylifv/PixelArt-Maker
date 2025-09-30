@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>PixelArt Maker</title>
+  </head>
+    <body>
+      <h1>PixelArt Maker</h1>
+      <a id="sig">- By R McGregor</a>
+      <main>
+        <div id="board-size-choice">
+          <input id="size-amount"
+                 placeholder="Choose a grid size..."
+                 type="number"
+                 max="50"
+                 />
+          <button id="select" onclick="createBoard()">Create</button>
+          <button id="new-board" onclick="restart()">New Board</button>
+        </div>
+        <div id=colour-wheel>
+          <label for="color">Select a colour:</label>
+          <input type="color" id="current_color" value="#e67e10">
+        </div>
+          <div id="pixel-board"></div>
+      </main>
+     <script src="script.js"></script>
+  </body>
+</html>
