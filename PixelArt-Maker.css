@@ -1,22 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
 :root {
-  --off-white: #d6ccc1;
-  --pale-orange: #ebb071;
-  --border-sand: #e09e58;
+  --platinum: #DEDEE0;
+  --pale-orange: #E3B23C;
+  --dim-grey: #6E675F;
   --white: #fff;
   --dark-grey: #3d3d3d;
   --medium-grey: #696969;
-  --sand-grey: #b8afa5;
+  --feldgrau: #586F6B;
 }
 
 body {
-  background-color: var(--sand-grey);
+  background-color: var(--feldgrau);
   margin: 0;
   auto: 0;
   width: 99vw;
   position: relative;
   font-family: 'Ubuntu';
+  color: var(--white);
 }
 
 main {
@@ -32,6 +33,7 @@ h1 {
   text-align: center;
   padding: 15px;
   font-size: 2.5em;
+  color: var(--white);
 }
 
 #board-size-choice {
@@ -46,7 +48,7 @@ h1 {
 
 #size-amount {
   height: 22px;
-  border: 3px solid var(--off-white);
+  border: 3px solid var(--platinum);
   text-align: center;
   font-weight: bold;
 }
@@ -57,10 +59,11 @@ h1 {
 
 #select, #new-board {
   margin: 10px;
-  border: 2px solid var(--border-sand);
+  border: 3px solid var(--platinum);
   background-color: var(--pale-orange);
   color: var(--white);
   height: 30px;
+  font-weight: bold;
 }
 
 #colour-wheel {
@@ -79,6 +82,7 @@ h1 {
   width: 120px;
   margin-left: 20px;
   border: none;
+  border-radius: 3px;
 }
 
 #pixel-board {
@@ -92,7 +96,7 @@ h1 {
   border: 5px solid var(--white);
   gap: 3px;
   padding: 3px;
-  background-color: var(--off-white);
+  background-color: var(--platinum);
 }
 
 .box {
